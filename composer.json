@@ -1,0 +1,32 @@
+{
+    "name": "htech/dragonpay",
+    "description": "Dragonpay integration for htechcorp",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "htech.web",
+            "email": "dev.web@htechcorp.net"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Htech\\Dragonpay\\DragonpayServiceProvider"
+            ],
+            "aliases": {
+                "Dragonpay": "Htech\\Dragonpay\\Facade"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Htech\\Dragonpay\\": "src"
+        }
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^7.1"
+    }
+}

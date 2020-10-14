@@ -1,0 +1,24 @@
+/* HIDE RADIO */
+.processors { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* IMAGE STYLES */
+.processors + img {
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.processors + img:before {
+  cursor: pointer;
+  content: attr(alt);
+}
+
+/* CHECKED STYLES */
+.processors:checked + img {
+  outline: 2px solid #f00;
+}

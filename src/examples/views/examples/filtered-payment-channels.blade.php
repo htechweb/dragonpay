@@ -32,7 +32,7 @@
 			  	<div class="form-group">
 					<label><span class="text-danger">*</span>Payment Channels:</label>
 					@php
-						$DPProcessor = new \App\Dragonpay\DP_Processors;
+						$DPProcessor = new \Htech\Dragonpay\DP_Processors;
 						$modeValues = $DPProcessor->getModeValues([1,2,4]); // used to parse payment method types
 					@endphp
 					<select class="form-control" name="mode" required>
